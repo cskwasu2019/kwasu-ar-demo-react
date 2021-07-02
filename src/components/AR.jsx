@@ -31,7 +31,9 @@ const Layout = () => {
       <div className="w-screen h-screen relative flex flex-col">
         {state === 'initial' && (
           <div className="m-auto flex flex-col gap-2 items-center uppercase text-center">
-            <img src={QRImage} alt="qr image" className="w-40 h-40" />
+            <a href={QRImage} target="_blank">
+              <img src={QRImage} alt="qr image" className="w-40 h-40" />
+            </a>
             <h1 className="font-bold">
               Camera Stream is ready for AR
               <span className="block text-sm font-normal">
