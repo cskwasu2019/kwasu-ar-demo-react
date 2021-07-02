@@ -1,0 +1,24 @@
+name: Deployment
+on:
+  push:
+    branches: [prod]
+jobs:
+  deploy-to-netlify:
+    name: Deploy to netlify
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup NodeJS
+        uses: action/setup-node@2
+        with:
+          node-version: 14.x
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Build
+        run: npm run build
+      - uses: netlify/actions/cli@master
+        name: 'Deploying... :rocket:'
+        with: deploy -pd build
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_ACCESS_TOKEN }}

@@ -1,0 +1,13 @@
+@keyframes anim-loading {
+  0% {
+    @apply w-16;
+  }
+
+  50% {
+    @apply w-20;
+  }
+
+  100% {
+    @apply w-16;
+  }
+}
