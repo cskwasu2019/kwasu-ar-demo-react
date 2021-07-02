@@ -18,7 +18,8 @@ jobs:
         run: npm run build
       - uses: netlify/actions/cli@master
         name: 'Deploying... :rocket:'
-        with: deploy -pd build
+        with:
+          args: 'deploy -pd build'
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
