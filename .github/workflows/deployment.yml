@@ -17,7 +17,7 @@ jobs:
       - name: Run Build
         run: npm run build
       - uses: netlify/actions/cli@master
-        name: 'Deploying... :rocket:'
+        name: 'Deploying... 🚀'
         with:
           args: 'deploy -pd build'
         env:
