@@ -31,8 +31,11 @@ const Layout = ({ showArBtn }) => {
             <Scene />
           </ErrorBoundary>
           <div className="py-4 flex flex-col justify-center mt-auto items-center lg:hidden">
-            <button onClick={() => scrollToElement('detail')}>
-              <span className="icon-down-dir text-2xl text-green-800 bg-grey-100 w-20 h-20 rounded-full"></span>
+            <button
+              onClick={() => scrollToElement('detail')}
+              className="w-12 h-12 rounded-full bg-grey-100 text-2xl text-green-800 outline-none"
+            >
+              <span className="icon-down-dir"></span>
             </button>
           </div>
         </div>

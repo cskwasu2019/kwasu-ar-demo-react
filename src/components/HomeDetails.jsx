@@ -73,7 +73,7 @@ const HomeDetails = () => {
         }
       >
         {(data) => (
-          <table className="w-full h-full mx-auto">
+          <table className="w-full h-full mx-auto text-sm lg:text-base">
             <tbody>
               {new Array(Math.max(data.figures.length, data.texts.length))
                 .fill(null)
@@ -99,7 +99,7 @@ const HomeDetails = () => {
                           {data.figures[index][0]}
                         </span>
                         <br />
-                        <span className="text-grey-600 text-lg">
+                        <span className="text-grey-600 lg:text-lg">
                           {data.figures[index][1]}
                         </span>
                       </td>
