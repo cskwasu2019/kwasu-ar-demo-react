@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import ARDebug from './ARDebug'
 import { LoadingContext } from './Loading'
 import { scanImageData } from 'zbar.wasm'
-import POS from 'js-aruco/posit1'
+import POS from 'js-aruco/posit2'
 import SceneAR, { MODEL_SIZE } from './SceneAR'
 import { Vector3 } from 'three'
 
