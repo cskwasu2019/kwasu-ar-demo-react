@@ -8,6 +8,11 @@ Currently, any QRCode can be used as marker but. You can also use the QRCode bel
 
 <img src="src/assets/images/qr.png" alt="QRCode" width="200">
 
+## Screenshots
+
+<img src=".github/screenshots/screenshot1.png" width="350" alt="Screenshot 1">
+<img src=".github/screenshots/screenshot2.png" width="350" alt="Screenshot 2">
+
 ## Developmet Setup
 
 Just the basics, clone the repo the
